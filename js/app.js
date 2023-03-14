@@ -7,3 +7,10 @@ console.log(totalSalary(employees));
 
 import { departmentQuantity } from "./methods.js";
 console.log(departmentQuantity(employees));
+
+// task 3
+
+// import employees from "./employees.js";
+
+import * as employeesMethods from "./methods.js";
+console.log(employeesMethods.departmentSalary(employees));

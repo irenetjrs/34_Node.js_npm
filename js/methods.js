@@ -20,3 +20,18 @@ export function departmentQuantity(employees){
    return new Set(quantity).size;
 };
 console.log(departmentQuantity(employees));
+
+// task 3
+
+export function departmentSalary(employees){
+   let salaries = {};
+   employees.forEach(item =>{
+   if (salaries[item.department] === undefined) {
+   salaries[item.department] = item.salary;
+   return;
+   }
+   salaries[item.department] += item.salary;
+});
+   return salaries;
+}
+console.log(departmentSalary(employees));

@@ -11,3 +11,4 @@ export const employees =
 {name: 'Harry', department: 'sales', salary: 1800},
 {name: 'Jacob', department: 'sales', salary: 1200},
 ];
+export default employees;
