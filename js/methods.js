@@ -10,3 +10,13 @@ export function totalSalary(employees){
 };
 console.log(totalSalary(employees));
 
+// task 2
+
+export function departmentQuantity(employees){
+   let quantity = [];
+   employees.forEach(item =>{
+      quantity.push(item.department);
+   });
+   return new Set(quantity).size;
+};
+console.log(departmentQuantity(employees));
